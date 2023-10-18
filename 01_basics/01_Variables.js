@@ -1,12 +1,20 @@
-const accountId = 1223
-let accountEmail = 'akhtar@gmail.com' // a memory will create and later we can chnge the value also
-var accountName = 'Akhtar'
-accountCity = 'Guwahati'
+const myAccount = 1425
+let myEmail = 'akhtar@gmail.com'
+var myCountry = 'India'
+myUni = 'Mizoram university' //we can reserve memory like this also.but it is not recommended
 
-// accountId = 4 // not allowed cause it is const 
+let accountState; //if we declare a variable without declaring its value.it will be undefined then
 
-accountEmail = 'akhtarul@gmail.com'
-accountName = 'yo yo'
-accountCity = 'assam'
+// myAccount = 546  //it will not allow. cause it is constant.
 
-console.table([accountId, accountEmail, accountName, accountCity]);
+myEmail = 'islam@gmail.com'
+myCountry = 'Bharat'
+myUni ='Assam University'
+
+/* 
+prefer do not use var 
+cause it has issue with block scope and functional scope
+*/
+
+
+console.table([myAccount, myEmail, myCountry, myUni, accountState])
