@@ -19,8 +19,8 @@
 // - symbol = to make value unique
 // - BigInt = long value or scientific value which will be not handled by Int that will be handled by BigInt
 
-const id = Symbol('123')
-const anotherId = Symbol('123')
+const id = Symbol("123");
+const anotherId = Symbol("123");
 
 // console.log(id === anotherId); // false
 
@@ -38,18 +38,45 @@ const anotherId = Symbol('123')
 // - Objects
 // - Functions
 
-const heros = ["Saktiman", "naagraj", "doga"]
+const heros = ["Saktiman", "naagraj", "doga"];
 
 let myProfile = {
-    name: "Akhtar",
-    email: "iaktr999@gmaail.com",
-    gender: "Male"
-}
+  name: "Akhtar",
+  email: "iaktr999@gmaail.com",
+  gender: "Male",
+};
 
-const myFunction = ()=>{
-    console.log("hello world");
-}
+const myFunction = () => {
+  console.log("hello world");
+};
 
 // console.log(typeof heros); //object
 // console.log(typeof myProfile);  // object
 // console.log(typeof myFunction); // it will return function. but it is actually function object
+
+// *********************************************Memory Allocation**********************************************
+
+//Stack (Primitive)   we will get a copy of variable
+//Heap (Non- primitive) we will get here reference
+
+let myName = "Akhtar";
+let anotherName = myName;
+
+anotherName = "Akhtarul Islam";
+
+// console.log(myName);
+// console.log(anotherName);
+
+let myOrder = {
+  id: 123,
+  product: "Phone",
+  Price: 12000,
+};
+
+let myOrder2 = myOrder;
+
+myOrder.product = "Laptop";
+myOrder2.Price = 50000;
+
+console.log(myOrder2);
+console.log(myOrder);
