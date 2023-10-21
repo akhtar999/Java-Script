@@ -28,7 +28,7 @@ const url = "https://akhtar.com/product%20laptop";
 // console.log(url.includes('akhtar'))  // true
 // console.log(url.includes('mobile')) // false
 
-const language = new String("as-sa-me-se"); // it will give object with key valur pairs like indexes.
+const language = new String("as-sa-me-se-english"); // it will give object with key valur pairs like indexes.
 
 const array1 = language.split("-");
 console.log(array1);
