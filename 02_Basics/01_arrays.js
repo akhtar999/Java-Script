@@ -25,10 +25,16 @@ const array3 = array2.join(); // turns to string
 
 //******************************splice(), slice() ******************************************
 
-console.log("A ", array2);
+// console.log("A ", array);
 
-const array4 = array2.splice(1, 4);
+// const array4 = array.splice(1, 4); // icludes the end range also
 
-console.log(array4);
+// console.log(array4); // [1,2,3,4]
 
-console.log("B ", array2);
+// console.log("C ", array); // original array modified // [0,5,6]
+
+console.log("D", array2);
+const array5 = array2.slice(1, 5); // doesn't include end range
+console.log(array5); // [12,13,14,15]
+
+console.log("E", array2); // here original array doesn't change
