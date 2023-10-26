@@ -34,7 +34,14 @@ const array3 = array2.join(); // turns to string
 // console.log("C ", array); // original array modified // [0,5,6]
 
 console.log("D", array2);
-const array5 = array2.slice(1, 5); // doesn't include end range
-console.log(array5); // [12,13,14,15]
+// const array5 = array2.slice(1, 5); // doesn't include end range
+// console.log(array5); // [12,13,14,15]
 
-console.log("E", array2); // here original array doesn't change
+// console.log("E", array2); // here original array doesn't change
+
+// const array6 = array2.unshift(10); // add new element and return lenght of the array
+// console.log(array6);
+
+const array7 = array2.shift();
+
+console.log(array7);
