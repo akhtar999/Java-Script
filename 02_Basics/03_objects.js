@@ -7,7 +7,7 @@ const mySym = Symbol("key1"); // interview : how to add symbol in object and acc
 
 const user = {
   name: "akhtar",
-  [mySym]: "key2",
+  [mySym]: "key2", // this is how we declare symbol
   "full name": "akhtarul islam", // we cant access this by dot notation
   age: 23,
   email: "akhtar@gmail.com",
