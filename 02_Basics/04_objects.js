@@ -45,8 +45,22 @@ const newObject = { ...obj1, ...obj2, ...obj3 };
 console.log(User); // { name: 'akhtar', id: '1', isLoggedIn: true }
 
 // we can access only key also & value
-console.log(Object.keys(User)); //datatype: array [ 'name', 'id', 'isLoggedIn' ]
-console.log(Object.values(User)); // datatype: array [ 'akhtar', '1', true ]
-console.log(Object.entries(User)); // datatype: array [ [ 'name', 'akhtar' ], [ 'id', '1' ], [ 'isLoggedIn', true ] ]
+// console.log(Object.keys(User)); //datatype: array [ 'name', 'id', 'isLoggedIn' ]
+// console.log(Object.values(User)); // datatype: array [ 'akhtar', '1', true ]
+// console.log(Object.entries(User)); // datatype: array [ [ 'name', 'akhtar' ], [ 'id', '1' ], [ 'isLoggedIn', true ] ]
 
-console.log(User.hasOwnProperty("name")); // true
+// console.log(User.hasOwnProperty("name")); // true
+
+//*************************************************************************************************** \
+//array destructure
+
+const country = {
+  name: "India",
+  state: 28,
+  population: "135Cr",
+};
+
+const { name, state, population: popu } = country;
+
+console.log(name, state);
+console.log(popu);
