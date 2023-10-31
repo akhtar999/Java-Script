@@ -6,6 +6,7 @@ if (true) {
   const b = 20; // block scope (we can't use this variable outside this block scope)
   //   console.log(`block scope ${a}`); // string interpolation
 }
+
 // console.log(a);
 // console.log(b);
 // console.log(c);
